@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="tests" thread-count="5">
+<listeners>
+<listener class-name="IListen.Ilistener"></listener>
+</listeners>
+<test name="IT">
+<parameter name="website" value="https://www.amazon.com/"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
+<classes>
+<class name="Piit.training.session.AmazonTestNGFramework.AmazonToPurchase"></class>
+</classes>
+</test>
+</suite>
